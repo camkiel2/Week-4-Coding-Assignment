@@ -1,0 +1,104 @@
+let ages = ["3", "9", "23", "64", "2", "8", "28", "93"];
+let lastIndex = ages.length - 1;
+let subtractionResult = ages[lastIndex] - ages[0];
+console.log(subtractionResult);
+ages.push("25");
+lastIndex = ages.length - 1;
+subtractionResult = ages[lastIndex] - ages[0];
+console.log(subtractionResult)
+let totalAge = 0;
+for (let i = 0; i < ages.length; i++) {
+  totalAge += ages[i];
+}
+
+let averageAge = totalAge / ages.length;
+console.log(averageAge);
+
+
+let names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+let totalLetters = 0;
+for (let i = 0; i < names.length; i++) {
+  totalLetters += names[i].length;
+}
+let concatenatedNames = "";
+for (let i = 0; i < names.length; i++) {
+  concatenatedNames += names[i] + " ";
+}
+console.log(concatenatedNames);
+
+let lastElement = array[array.length - 1];
+console.log(lastElement);
+
+let firstElement = array[0];
+console.log(firstElement);
+
+let namesSecond = ["Kelly", "Sam", "Kate"];
+let nameLengths = [];
+
+
+for (let i = 0; i < names.length; i++) {
+  nameLengths.push(namesSecond[i].length);
+}
+console.log(nameLengths);
+
+
+let sum = 0;
+for (let i = 0; i < nameLengths.length; i++) {
+  sum += nameLengths[i];
+}
+console.log(nameLengths);
+
+
+function concatenateWord(word, n) {
+  let concatenatedWord = '';
+  for (let i = 0; i < n; i++) {
+    concatenatedWord += word;
+  }
+  return concatenatedWord;
+}
+
+
+function fullName(firstName, lastName) {
+  let fullName = firstName + ' ' + lastName;
+  return fullName;
+}
+
+
+function sumGreaterThanZero(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum > 100;
+}
+
+function calculateAverage(numbers) {
+    if (numbers.length === 0) {
+      return 0;
+    }
+   
+    function isAverageGreaterThan(numbers1, numbers2) {
+        const average1 = calculateAverage(numbers1);
+        const average2 = calculateAverage(numbers2);
+        return average1 > average2;
+      }
+      
+  function calculateAverage(numbers) {
+        if (numbers.length === 0) {
+          return 0;
+        }
+
+
+function willBuyDrink(isHotOutside, moneyInPocket) {
+  return isHotOutside && moneyInPocket > 10.50;
+}
+  }
+}
+
+function calculateScore(touchdowns, fieldGoals, extraPoints) {
+    const touchdownScore = touchdowns * 6;
+    const fieldGoalScore = fieldGoals * 3;
+    const extraPointScore = extraPoints * 1;
+    return touchdownScore + fieldGoalScore + extraPointScore;
+  }
+This function was made to set the number of points you get for scoring in various ways in football, I'm a huge football fan and thought it would be something fun to test out. 
